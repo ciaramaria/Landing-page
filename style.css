@@ -1,74 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
 
-html, body {
-    padding: 0%;
+* {
     margin: 0%;
-    width: 100%;
-    height: 100%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* section principal */
-.home {
+header {
     width: 100%;
-    height: 100%;
-    background: url(./img/generales-Ingeniero-Huergo-1.webp) no-repeat 50% 50%;
-    background-size: cover;
-    display: table;
-    margin: 0;
-    top: 0;
-    
+    height: 70px;
+    margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+
 }
-/*empezar y titulo  */
-.home-two {
-    height: 60%;
+
+.container-menu {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 100%;
+    display: flex ;
     align-items: center;
-    text-align: center;
     
 }
-/* contenido de titulo y empezar */
-.container {
-    font-size: 230%;
-   top: 20%;
-}
-/* ingeniero huergo cont */
-.container h1 {
-    font-family: 'Poppins', sans-serif;
-color: antiquewhite;
-font-size: 205%;
 
-text-shadow: 0px 1px 1px black;
-}
-/* empezar link */
-.container a {
-    color: goldenrod ;
-
-    text-decoration: dotted ;
-    font-weight:bold;
-    border: 1px dashed;
-    border-radius: 5px;
-    padding: 3px 30px;
-}
-/* mouse por encima */
-.container a:hover {
-    color: green
+.logo img {
+   width: 60px;
+   border-radius: 10px;
+  
 }
 
-p {
-    font-size: 100%;
-    line-height: 135%;
-    margin: 2%;
-    font-family: 'Poppins', sans-serif;
+.menu { 
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.menu ul {
+    display: flex;
 }
 
-#paragraph {
-    color: black ;
+.menu ul li {
+    list-style: none;
+    margin-left: 30px;
+}
 
-    text-decoration:underline ;
-    font-weight:bold;
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(12, 51, 51);;
+    text-transform: uppercase;
+}
 
-    padding: 3px 30px;
-    margin: 2%;
-    font-family: 'Poppins', sans-serif;
+.container-cover {
+    width: 100%;
+    height: 800px;
+    background: rgb(158, 230, 174);
+}
+
+.cover {
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container-cover .text {
+    max-width: 500px;
+
+}
+.image {
+    padding-left: 10%;
+}
+
+.container-cover .text h1 {
+    font-size: 30px;
+    font-weight: 600%;
+
+}
+
+.container-cover .text p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.container-cover .text input {
+    padding: 15px 70px;
+    border: none;
+    font-size: 20px;
+    border-radius: 65px;
+    margin-top: 40px;
+    background: linear-gradient(to left, #2e533c, rgb(158, 230, 174));
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -15px #2e533c;
+    transition: all 300ms;
+}
+
+.container-cover .text input:hover  {
+    box-shadow: 1px 1px 30px -5px #2e533c;
+}
+
+.container-cover .image img {
+    width: 700px;
+    animation: move-img 5s linear infinite;
+    border-radius: 20%;
+
+
+}
+
+@keyframes move-img{
+    0%{
+        transform: translate(5px);
+    }50% {
+        transform: translate(0px);
+    }100%{
+        transform: translate(5px);
+    }
+}
+
+
+#selected {
+    
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px -15px #3c5043;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -15px #205224;
+    transition: all 300ms;
+}
+
+.background {
+    background-color: #3c5043;
 }
